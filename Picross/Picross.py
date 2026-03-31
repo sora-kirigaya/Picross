@@ -416,13 +416,13 @@ def sauvegarder_image_cree():
 def importer_image():
     "Permet d'importer une image : demande à l'utilisateur de choisir une image dans ses fichiers puis lance la partie avec cette image"
     showinfo("Information", "C'est mieux de choisir une image en noir et blanc")
-    chemin_du_fichier = askopenfilename(title="Ouvrir une image en noir et blanc", initialdir='Asset/Mes_images', filetypes=[('png files','.png')]) 
+    chemin_du_fichier = askopenfilename(title="Ouvrir une image en noir et blanc", initialdir='Picross/Asset/Mes_images', filetypes=[('png files','.png')]) 
     switch_to_frame_jeu(chemin_du_fichier)
         
 marge = 10
 
 # création de l'accueil
-image_accueil = PhotoImage(file="Asset/picross_image.png")
+image_accueil = PhotoImage(file="Picross/Asset/picross_image.png")
 affichage_image_accueil = Button(frame_accueil, image=image_accueil, command = secret)
 affichage_image_accueil.pack()
 
